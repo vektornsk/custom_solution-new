@@ -1,0 +1,21 @@
+// ========== Font-mixin ========== 
+
+.include-custom-font(@family: arial, @weight: normal, @style: normal){
+	@font-face{
+		font-family: "@{family}";
+//		src:url('../fonts/@{family}/@{family}.eot');
+//		src:url('../fonts/@{family}/@{family}.eot?#iefix') format('embedded-opentype'),
+//			url('../fonts/@{family}/@{family}.woff') format('woff'),
+//			url('../fonts/@{family}/@{family}.ttf') format('truetype');
+		src:url('../fonts/@{family}/@{family}.ttf') format('truetype');
+		font-weight: @weight;
+		font-style: @style;
+	}
+}
+
+// ========== Font-add ========== 
+
+.include-custom-font(RobotoRegular);
+.include-custom-font(bebasneue-bold);
+.include-custom-font(opensans-bold);
+.include-custom-font(opensans-light);

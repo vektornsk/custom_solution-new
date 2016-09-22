@@ -1,0 +1,127 @@
+// ========== Import ==========
+
+@import "fonts";
+
+// ========== Variable ==========
+
+@georgia: "Georgia", "Times New Roman", "Times", serif;
+@helvetica: "Helvetica", "Roboto", "Arial", sans-serif;
+@lucida-grande: "Tahoma", "Verdana", "Arial", sans-serif;
+@monospace: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+@verdana: "Verdana", "Geneva", sans-serif;
+
+@red: #c71617;
+@gray: #919ba1;
+@white: #ffffff;
+@color-text1: #cccccc;
+@color-text2: #323231;
+
+
+// ========== Basic styles ==========
+
+html {
+	height: 100%;
+
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+body {
+	width: 100%;
+	min-width: 320px;
+	height: 100%;
+	font-size: 20px;
+	background-color: #19262f;
+	color: @color-text2;
+	line-height: 27px;
+	font-family: "opensans-light", sans-serif;
+
+}
+
+h2, .title {
+	color: @white;
+	font-size: 50px;
+	font-family: "bebasneue-bold", sans-serif;
+	text-transform: uppercase;
+	line-height: 60px;
+	&.contact__h {
+		text-align: center;
+		margin-top: 50px;
+		@media screen and (max-width: 1024px) {
+			text-align: left;
+			margin-top: 0;
+		}
+		@media screen and (max-width: 762px) {
+			text-align: center;
+
+		}
+		@media screen and (max-width: 600px) {
+			font-size: 24px;
+
+		}
+	}
+	@media screen and (max-width: 480px) {
+		font-size: 26px;
+		line-height: 30px;
+		text-align: center;
+	}
+}
+
+p {
+	color: @color-text1;
+	padding: 11px 0;
+	@media screen and (max-width: 480px) {
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
+li {
+	list-style-type: none;
+}
+
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.cf {
+	zoom: 1;
+
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear:both;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.hidden,
+[hidden] {
+	display: none !important;
+}
+
+.img-adp,
+.iframe-adp {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
