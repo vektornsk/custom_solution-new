@@ -204,8 +204,8 @@
 		display: inline-block;
 		position: relative;
 		vertical-align: top;
-		margin-left: 17.5px;
-		margin-right: 17.5px;
+		margin-left: 34px;
+		// margin-right: 17.5px;
 		margin-bottom: 20px;
 		&:hover {
 			.services__img {
@@ -477,6 +477,8 @@
 }
 .services_slider {
 	margin-top: 20px;
+	width: 103%;
+	margin-left: -34px;
 }
 .slider .services__img {
 	@media screen and (max-width: 640px) {
@@ -2085,6 +2087,22 @@ label.error {
 }
 /* 22.09.2016 pravki
 ================================================================================*/
+/* slides*/
+.slider-top {
+	li {
+		margin-left: 0;
+	}
+}
+.services-index {
+	li {
+		margin-left: 0;
+		margin-right: 34px;
+		&:nth-child(6n) {
+			margin-right: 0;
+		}
+	}
+}
+
 /* social button*/
 .social {
 	width: 38px;
