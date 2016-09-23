@@ -388,9 +388,10 @@ a {
   margin: 0 auto 20px;
 }
 .services__name {
-  font-size: 20px;
+  font-size: 18px;
   color: #cccccc;
-  line-height: 10px;
+  line-height: 1.5;
+  display: inline-block;
 }
 .footer {
   position: relative;
@@ -526,6 +527,9 @@ a {
     top: 24px;
     right: 17px;
   }
+}
+.service {
+  overflow: hidden;
 }
 .service_h {
   display: none;
@@ -2348,7 +2352,6 @@ label.error {
 }
 .slider-top {
   margin-top: 148px;
-  width: 726px;
   overflow: hidden;
 }
 .slick-dots {

@@ -198,6 +198,7 @@
 .services {
 	font-size: 0;
 	margin-top: 30px;
+	// overflow: hidden;
 	&__item {
 		text-align: center;
 		width: 165px;
@@ -239,9 +240,10 @@
 		margin: 0 auto 20px;
 	}
 	&__name {
-		font-size: 20px;
+		font-size: 18px;
 		color: @color-text1;
-		line-height: 10px;
+		line-height: 1.5;
+		display: inline-block;
 	}
 }
 
@@ -381,6 +383,7 @@
 }
 // ========== Услуги =========
 .service {
+	overflow: hidden;
 	&_h {
 		display: none;
 		@media screen and (max-width: 820px) {
@@ -2145,7 +2148,6 @@ label.error {
 }
 .slider-top {
 	margin-top: 148px;
-	width: 726px;
 	overflow: hidden;
 }
 .slick-dots {
