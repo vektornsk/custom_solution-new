@@ -528,6 +528,7 @@
 }
 // ========== О компании ==========
 .about {
+	padding-top: 45px;
 	&__h {
 		display: none;
 		@media screen and (max-width: 1222px) {
@@ -551,7 +552,7 @@
 		color: @color-text2;
 	}
 	li {
-		padding-left: 12px;
+		padding-left: 20px;
 		position: relative;
 		&:before {
 			content: "";
@@ -2258,11 +2259,26 @@ label.error {
 	left: 400px;
 }
 /* Address */
+.address-lauout {
+	display: none;
+	transition: display .3s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(51, 51, 51, .5);;
+}
 .address {
 	background: #fff;
 	text-align: left;
   color: #323231;
-	position: relative;
+	position: absolute;
+	z-index: 20;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
 	&__name {
 		background: @red;

@@ -165,27 +165,48 @@ $(function() {
 	heightAbout = $('.about-box_right').height();
 	$('.about-box_left').height(heightAbout + 90);
 
+/* contact popup */
+
+$('.map-loc').on('click', function(){
+	var city = $(this).data('city');
+	var loc = $(this).data('loc');
+	var tel = $(this).data('tel');
+	var email = $(this).data('email');
+	$('.address-lauout').fadeIn(300);
+	$('.address__name').text(city);
+	$('.address__loc span').text(loc);
+	$('.address__tel span').text(tel);
+	$('.address__email span').text(email);
+});
+
+$('.address-lauout').on('click', function(){
+	$(this).fadeOut(300);
+});
+$('.button-close').on('click', function(){
+	$('.address-lauout').fadeOut(300);
+});
+
 // MAP
-	// var map,
-	// 	myIcon;
-	//
-	// DG.then(function () {
-	// 	map = DG.map('map', {
-	// 		center: [54.957517, 82.809657],
-	// 		zoom: 16
-	// 	});
-	//
-	// myIcon = DG.icon({
-	// 	iconUrl: 'js/map.png',
-	// 	iconSize: [71, 61],
-	// 	iconAnchor: [30, 50]
-	//
-	// });
-	// DG.marker([54.957517, 82.809657], {
-	// 	icon: myIcon
-	// }).addTo(map).bindPopup('630052, Архонский переулок, 2а, 1 этаж');
-	//
-	// });
+	/*var map,
+		myIcon;
+
+	DG.then(function () {
+		map = DG.map('map', {
+			center: [54.957517, 82.809657],
+			zoom: 16
+		});
+
+	myIcon = DG.icon({
+		iconUrl: 'js/map.png',
+		iconSize: [71, 61],
+		iconAnchor: [30, 50]
+
+	});
+	DG.marker([54.957517, 82.809657], {
+		icon: myIcon
+	}).addTo(map).bindPopup('630052, Архонский переулок, 2а, 1 этаж');
+
+});*/
 
 });
 
