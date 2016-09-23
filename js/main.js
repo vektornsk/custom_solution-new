@@ -109,27 +109,21 @@ $(function() {
 		nextArrow: '<button type="button" class="slick-next"></button>',
 		responsive: [
 			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 5
-				}
-			},
-			{
-				breakpoint: 1050,
+				breakpoint: 1201,
 				settings: {
 					slidesToShow: 4
 				}
 			},
 			{
-				breakpoint: 820,
+				breakpoint: 901,
 				settings: {
 					slidesToShow: 3
 				}
 			},
 			{
-				breakpoint: 640,
+				breakpoint: 767,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 					slidesToScroll: 1,
 					centerMode: true,
 					centerPadding: '0px'
@@ -137,14 +131,12 @@ $(function() {
 				}
 			},
 			{
-			breakpoint: 320,
+			breakpoint: 481,
 			settings: {
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			centerMode: true,
-
-
-			}
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerMode: true,
+				}
 			}
 		]
 

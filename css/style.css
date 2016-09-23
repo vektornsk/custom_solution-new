@@ -183,8 +183,12 @@ a {
 }
 @media screen and (max-width: 1222px) {
   .js-menu {
+    padding-top: 113px;
     display: none;
   }
+}
+.nav-header {
+  position: relative;
 }
 .nav-header__link {
   height: 113px;
@@ -192,27 +196,6 @@ a {
   margin-right: 50px;
   display: block;
   float: left;
-}
-@media screen and (max-width: 1280px) {
-  .nav-header__link {
-    margin-left: 50px;
-  }
-}
-@media screen and (max-width: 1222px) {
-  .nav-header__link {
-    float: none;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .nav-header__link {
-    margin-left: 27px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .nav-header__link {
-    height: 75px;
-    margin-left: 17px;
-  }
 }
 .nav-header__img {
   margin: 18px 0 0 0;
@@ -282,28 +265,28 @@ a {
   width: 1170px;
   margin: 0 auto;
 }
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 728px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
 .container_top {
   margin-top: 113px;
   margin-bottom: 60px;
 }
-@media screen and (max-width: 1024px) {
-  .container_top {
-    padding-top: 40px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .container_top {
-    padding-top: 0;
-    margin-bottom: 1px;
-  }
-}
 .container_100 {
   max-width: 100%;
-}
-@media screen and (max-width: 1280px) {
-  .container {
-    max-width: 100%;
-  }
 }
 @media screen and (min-width: 1280px) {
   .content__text {
@@ -314,9 +297,6 @@ a {
   }
 }
 @media screen and (max-width: 1280px) {
-  .content {
-    padding: 0 50px;
-  }
   .content__text p {
     max-width: 800px;
   }
@@ -325,9 +305,6 @@ a {
   }
 }
 @media screen and (max-width: 1024px) {
-  .content {
-    padding: 0 27px;
-  }
   .content__text p {
     max-width: 100%;
   }
@@ -418,14 +395,6 @@ a {
   line-height: 1;
   padding-top: 9px;
 }
-@media screen and (max-width: 1024px) {
-  .footer__copy {
-    padding-left: 27px;
-  }
-  .footer__design {
-    padding-right: 27px;
-  }
-}
 @media screen and (max-width: 480px) {
   .footer {
     height: 80px;
@@ -505,7 +474,7 @@ a {
   position: absolute;
   display: none;
   top: 46px;
-  right: 30px;
+  right: 0px;
 }
 .button-menu_close {
   width: 31px;
@@ -538,6 +507,7 @@ a {
   .service_h {
     display: block;
     padding: 20px;
+    padding-left: 0;
     text-align: left;
   }
 }
@@ -1598,8 +1568,8 @@ label.error {
 }
 @media screen and (max-width: 768px) {
   .container-landing .content {
-    padding-right: 27px !important;
-    padding-left: 27px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1657,7 +1627,7 @@ label.error {
 @media screen and (max-width: 767px) {
   .call {
     padding-top: 47px;
-    padding-bottom: 47px;
+    padding-bottom: 80px;
   }
 }
 .call__h {
@@ -2305,6 +2275,11 @@ label.error {
 .services-index li:nth-child(6n) {
   margin-right: 0;
 }
+@media (max-width: 1200px) {
+  .services-index li:nth-child(6n):nth-child(6n) {
+    margin-right: 34px;
+  }
+}
 /* social button*/
 .social {
   width: 38px;
@@ -2344,14 +2319,39 @@ label.error {
   float: left;
   width: 474px;
 }
+@media (max-width: 1200px) {
+  .container_slider__left {
+    width: 330px;
+  }
+}
+@media (max-width: 900px) {
+  .container_slider__left {
+    width: 0;
+  }
+}
 .container_slider__right {
   float: right;
   width: calc( 100% - 474px );
 }
+@media (max-width: 1200px) {
+  .container_slider__right {
+    width: calc( 100% - 330px );
+  }
+}
+@media (max-width: 900px) {
+  .container_slider__right {
+    width: 100%;
+  }
+}
 .woman {
-  width: 397px;
+  width: 100%;
   height: 490px;
-  background: url(../img/woman.png) no-repeat bottom;
+  background: url(../img/woman.png) no-repeat left bottom;
+}
+@media (max-width: 1200px) {
+  .woman {
+    background-size: 95%;
+  }
 }
 .slider-top {
   margin-top: 148px;
