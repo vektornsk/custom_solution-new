@@ -166,12 +166,12 @@ a {
   }
 }
 .header {
+  zoom: 1;
   width: 100%;
   background: #ffffff;
-  overflow: hidden;
   position: fixed;
   z-index: 10;
-  zoom: 1;
+  height: 112px;
 }
 .header:before,
 .header:after {
@@ -189,6 +189,7 @@ a {
 }
 .nav-header {
   position: relative;
+  overflow: hidden;
 }
 .nav-header__link {
   height: 113px;
@@ -2411,7 +2412,7 @@ label.error {
   display: block;
   width: 37px;
   height: 19px;
-  bottom: -19px;
+  bottom: -18px;
   left: 17px;
   border-style: solid;
   border-width: 19px 18.5px 0 18.5px;
@@ -2423,7 +2424,7 @@ label.error {
   display: block;
   width: 37px;
   height: 19px;
-  top: -19px;
+  top: -18px;
   left: 17px;
   border-style: solid;
   border-width: 0 18.5px 19px 18.5px;
@@ -2467,6 +2468,7 @@ label.error {
   background: rgba(51, 51, 51, 0.5);
 }
 .address {
+  display: none;
   background: #fff;
   text-align: left;
   color: #323231;

@@ -165,6 +165,7 @@ $('.map-loc').on('click', function(){
 	var tel = $(this).data('tel');
 	var email = $(this).data('email');
 	$('.address-lauout').fadeIn(300);
+	$('.address').fadeIn(700);
 	$('.address__name').text(city);
 	$('.address__loc span').text(loc);
 	$('.address__tel span').text(tel);
@@ -172,9 +173,11 @@ $('.map-loc').on('click', function(){
 });
 
 $('.address-lauout').on('click', function(){
+	$('.address').fadeOut(200);
 	$(this).fadeOut(300);
 });
 $('.button-close').on('click', function(){
+	$('.address').fadeOut(200);
 	$('.address-lauout').fadeOut(300);
 });
 
