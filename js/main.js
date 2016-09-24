@@ -121,21 +121,13 @@ $(function() {
 				}
 			},
 			{
-				breakpoint: 767,
+				breakpoint: 761,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: true,
 					centerPadding: '0px'
 
-				}
-			},
-			{
-			breakpoint: 481,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				centerMode: true,
 				}
 			}
 		]
