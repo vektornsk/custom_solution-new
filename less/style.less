@@ -40,10 +40,9 @@
 	.cf;
 	width: 100%;
 	background: @white;
-//	overflow: hidden;
+	overflow: hidden;
 	position: fixed;
 	z-index: 10;
-	height: 112px;
 }
 .js-menu {
 	@media screen and (max-width: 1222px) {
@@ -2176,6 +2175,7 @@ label.error {
 	position: relative;
 	height: 623px;
 	background: url(../img/map.png) no-repeat center;
+	background-size: contain;
 }
 
 .map-loc {
@@ -2234,26 +2234,49 @@ label.error {
 .moscow {
 	top: 215px;
 	left: 158px;
+	@media (max-width: 1200px){
+		left: 60px;
+	}
 }
 .vladivostok {
 	top: 395px;
 	right: 160px;
+	@media (max-width: 1200px){
+		top: 385px;
+		right: 60px;
+	}
 }
 .urumchi {
  top: 435px;
  left: 500px;
+	@media (max-width: 1200px){
+		top: 420px;
+		left: 370px;
+	}
 }
 .ninbo {
  top: 505px;
  left: 605px;
+	@media (max-width: 1200px){
+		top: 475px;
+		left: 460px;
+	}
 }
 .iy {
  top: 590px;
  left: 580px;
+	@media (max-width: 1200px){
+		top: 565px;
+		left: 440px;
+	}
 }
 .novosibirsk {
 	top: 300px;
 	left: 400px;
+	@media (max-width: 1200px){
+		top: 290px;
+		left: 280px;
+	}
 }
 /* Address */
 .address-lauout {
