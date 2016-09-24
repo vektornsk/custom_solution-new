@@ -42,7 +42,9 @@ body {
 	color: @color-text2;
 	line-height: 1.35;
 	font-family: "opensans-light", sans-serif;
-
+	@media (max-width: 767px) {
+		font-size: 16px;
+	}
 }
 
 h2, .title {
@@ -50,26 +52,20 @@ h2, .title {
 	font-size: 50px;
 	font-family: "bebasneue-bold", sans-serif;
 	text-transform: uppercase;
-	line-height: 60px;
+	line-height: 1.2;
 	&.contact__h {
 		text-align: center;
 		margin-top: 50px;
-		@media screen and (max-width: 1024px) {
-			text-align: left;
-			margin-top: 0;
-		}
+		
 		@media screen and (max-width: 762px) {
 			text-align: center;
-
 		}
 		@media screen and (max-width: 600px) {
 			font-size: 24px;
-
 		}
 	}
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 767px) {
 		font-size: 26px;
-		line-height: 30px;
 		text-align: center;
 	}
 }
