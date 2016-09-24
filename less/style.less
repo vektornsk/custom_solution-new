@@ -359,7 +359,7 @@
 	@media screen and (max-width: 1222px) {
 		display: block;
 	}
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 760px) {
 		top: 24px;
 		right: 17px;
 	}
@@ -2196,6 +2196,13 @@ label.error {
 /* map */
 .container_map {
   margin-top: 163px;
+	@media (max-width: 900px) {
+		margin-top: 120px;
+	}
+	@media (max-width: 760px) {
+		margin-top: 63px;
+	}
+	
 }
 .map {
 	position: relative;
@@ -2320,6 +2327,7 @@ label.error {
 	background: rgba(51, 51, 51, .5);;
 }
 .address {
+	max-width: 500px;
 	display: none;
 	background: #fff;
 	text-align: left;
@@ -2329,6 +2337,12 @@ label.error {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	span {
+		width: calc(~"100% - 36px");
+		display: block;
+		float: left;
+		padding-left: 20px;
+	}
 
 	&__name {
 		background: @red;
@@ -2338,19 +2352,20 @@ label.error {
 		padding: 20px 30px;
 	}
 	&__inner {
-		vertical-align: middle;
-		display: inline-block;
 		width: 36px;
 		text-align: center;
-		margin-right: 20px;
+		float: left;
 	}
 	&__loc {
+		.cf;
 		margin: 30px 0;
 	}
 	&__tel {
+		.cf;
 		margin: 30px 0;
 	}
 	&__email {
+		.cf;
 		margin: 30px 0;
 	}
 }
@@ -2397,9 +2412,16 @@ label.error {
 	}
 	.address__text {
 		padding: 0px 30px;
+		@media (max-width: 760px) {
+			padding: 0 10px;
+		}
 	}
 	span {
+		width: calc(~"100% - 36px");
 		color: #fff;
+		display: block;
+		float: left;
+		padding-left: 20px;
 	}
 }
 
